@@ -16,6 +16,10 @@ def home_page():
 def product_page():
     return render_template("product.html")
 
+@app.route('/cart')
+def cart_page():
+    return render_template("cart.html")
+
 # Your code should be above
 
 if __name__ == "__main__":  # Makes sure this is the main process
